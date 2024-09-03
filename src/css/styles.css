@@ -16,3 +16,54 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.container {
+
+}
+
+input[type="text"] {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border-color: #808080;
+}
+
+input[type="text"]:hover {
+  border-color: #000000;
+}
+
+.search-btn {
+width: 91px;
+height: 40px;
+color: #ffffff;
+background-color: #4E75FF;
+border: none;
+border-radius: 8px;
+margin-left: 8px;
+}
+
+.search-btn:hover {
+  background-color: #6C8CFF;
+}
+
+.loading {
+
+}
+
+.gallery {
+  margin-top: 32px;
+}
+
+.load-more {
+  width: 91px;
+  height: 40px;
+  color: #ffffff;
+  background-color: #4E75FF;
+  border: none;
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+.load-more:hover {
+  background-color: #6C8CFF;
+}
