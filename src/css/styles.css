@@ -28,6 +28,10 @@ input[type="text"] {
   border-color: #808080;
 }
 
+.search-form {
+  
+}
+
 input[type="text"]:hover {
   border-color: #000000;
 }
@@ -47,21 +51,25 @@ margin-left: 8px;
 }
 
 .loading {
-
+display: none;
 }
 
 .gallery {
   margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px;
 }
 
 .load-more {
+  display: none;
   width: 91px;
   height: 40px;
   color: #ffffff;
   background-color: #4E75FF;
   border: none;
   border-radius: 8px;
-  margin-left: 8px;
+  margin: 0 auto;
 }
 
 .load-more:hover {

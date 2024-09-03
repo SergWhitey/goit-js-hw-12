@@ -7,6 +7,12 @@ const gallery = document.getElementById('gallery');
 const loadMoreButton = document.getElementById('load-more');
 const loadingIndicator = document.getElementById('loading');
 
+
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'data-caption',
+    captionDelay: 250,
+});
+
 export function renderImages(images) {
     const markup = images
         .map(image => {
@@ -26,13 +32,9 @@ export function renderImages(images) {
 
     gallery.insertAdjacentHTML('beforeend', markup);
 
-    const lightbox = new SimpleLightbox('.gallery a', {
-        captionsData: 'data-caption',
-        captionDelay: 250,
-    });
-
     lightbox.refresh();
 }
+
 
 export function showLoadMoreButton() {
     loadMoreButton.style.display = 'block';

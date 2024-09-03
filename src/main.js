@@ -9,6 +9,9 @@ import {
     showEndOfResultsMessage,
 } from './js/render-function.js';
 
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const form = document.getElementById('search-form');
 const loadMoreButton = document.getElementById('load-more');
 let query = '';
@@ -53,6 +56,11 @@ form.addEventListener('submit', async (event) => {
     } finally {
         hideLoading();
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    hideLoadMoreButton();
+    hideLoading();
 });
 
 loadMoreButton.addEventListener('click', async () => {
